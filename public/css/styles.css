@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Rubik:wght@300;500&family=Ubuntu&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    size: 3.5rem;
+    line-height: 1.5;
+}
+
+.card {
+    max-width: 60%;
+}
+
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    size: 4rem;
+    line-height: 1.5;
+}
+
+.modal-backdrop.show {
+    filter: blur(5px);
+}
+
+#top-title {
+    background-color: #C9E7F2;
+    overflow: hidden;
+    padding-bottom: 40px;
+    margin-bottom: 70px;
+}
+
+.titles {
+    padding-left: 100px;
+    
+}
+
+.quicksearch {
+    margin-bottom: 50px;
+    margin-left: 100px;
+    z-index: 3;
+
+}
+
+.brand-ico:hover img {
+    filter: none;
+    transition: all 0.5s ease;
+}
+
+.brand-ico img {
+    filter: grayscale(100%);
+    transition: all 0.5s ease;
+}
+
+#rr {
+    position: absolute;
+    z-index: 2;
+}
+
+.rr-row {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-link {
+    text-decoration: none;
+}
+
+.leftie {
+    padding-left: 100px;
+}
+
+.road {
+    background-color: #030718;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 50px;
+    bottom: 160px;
+}
+
+.test {
+    border: none;
+    color: #CDCDCF;
+}
+
+  
+@media (max-width: 768px) {
+    .road {
+      display: none;
+    }
+  }

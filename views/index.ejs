@@ -1,0 +1,180 @@
+    <section id="title" class="rr-row">
+        <section id="top-title">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo" style="width: 200px;"></a>
+
+              <!-- NAVBAR TOGGLER -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- NAVBAR CONTENT MIDDLE -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto leftie">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">How it works?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/catalogue">Catalogue</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Hosts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About us</a>
+                  </li>
+                </ul>
+
+                <!-- NAVBAR AUTH -->
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item me-2">
+                    <button type="button" class="btn btn-link text-dark" data-bs-toggle="modal" data-bs-target="#login">
+                      Login
+                    </button>
+                   
+                  </li>
+                  <li class="nav-item me-3">
+                    <button type="button" class="btn btn-dark text-white rounded-0" data-bs-toggle="modal" data-bs-target="#signup">
+                      Get started
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <!-- AUTH MODAL -->
+          <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <!-- Add your login form here -->
+                  <form id="login-form" class=" needs-validation card-body cardbody-color p-lg-5" method="post">
+                    <h2 class="text-center mb-5">Hello Again!</h2>
+                    <div class="form-group was-validated mb-3">
+                      <label for="email">Email address</label>
+                      <input type="email" class="form-control" id="email" name="email" required>
+                      <div class="invalid-feedback">
+                        Please enter your email address
+                    </div>
+                    </div>
+                    <div class="form-group was-validated mb-3">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password" name="password" required>
+                      <div class="invalid-feedback">
+                        Please enter your password
+                    </div>
+                    </div>
+                    <div class="form-group form-check my-3">
+                      <input class="form-check-input" type="checkbox" id="remember-me" name="remember-me">
+                      <label class="form-check-label" for="remember-me">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-dark w-100 rounded-0">Login</button>
+                    <p class="mt-3 text-center">Don't have an account? <a href="#" id="sign-in-link">Sign up instead</a></p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>    
+          
+          <!-- TITLE AND CAR IMAGE -->
+          <div class="row">
+            <div class="col-lg-6 titles">
+              <h1>Search, book and rent vehicle easily.</h1>
+              <p>Get a car wherever and whenever you need it with just a click on your laptop, ios or android device</p>
+            </div>
+            <div class="col-lg-6">
+              <img src="img/rrcar.png" id="rr" alt="rolce royce" />
+            </div>
+          </div>
+        </div>
+        </section>
+        <section id="bottom-title">
+        
+          <!-- Road -->
+          <div class="row">
+            <div class="col ms-4">
+            <div class="road"></div>    
+            </div>
+            <div class="col">
+            <div class="road"></div>    
+            </div>
+            <div class="col">
+            <div class="road"></div>    
+            </div>
+            <div class="col">
+            <div class="road"></div>    
+            </div>
+            </div>
+
+          <!-- APPLY FORM -->
+          
+          <div class="card quicksearch rounded-0 justify-content-md" style="margin-bottom: 130px;">
+            <div class="card-body">
+                  <form class="row" method="post" action="/search">
+                    <div class="col">
+                      <label for="make"><strong>Location:</strong></label>
+                      <select class="form-control test" id="make">
+                        <option value="">Accra, Kumasi</option>
+                        <option value="ford">Ford</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="toyota">Toyota</option>
+                      </select>
+                    </div>
+                    <div class="col">
+                      <label for="pickupDate"><strong>Pickup Date:</strong></label>
+                      <input type="date" class="form-control test" id="pickupDate">
+                    </div>
+                    <div class="col">
+                      <label for="returnDate"><strong>Return Date:</strong></label>
+                      <input type="date" class="form-control test" id="returnDate">
+                    </div>
+                    <div class="col-md-auto">
+                      <button type="submit" class="btn btn-dark rounded-0 w-100" style="font-size: 2rem;"><i class="bi bi-search"></i></button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+
+              <!-- BRAND ICONS -->
+                    <div class="container">
+                      <div class="row justify-content-md-center">
+                        <div class="col brand-ico">
+                          <img src="img/bmw.png"  style="width: 45px;" alt="toyota">
+                        </div>
+                        <div class="col brand-ico">
+                          <img  src="img/chevrolet.png"  style="width: 60px;"  alt="toyota">
+                        </div>
+                        <div class="col brand-ico">
+                          <img class="img-responsive"  src="img/Porshe.png" style="width: 40px;"  alt="porshe">
+                        </div>
+                        <div class="col brand-ico">
+                          <img class="img-responsive"  src="img/mercedes benz.png" style="width: 50px;" alt="Benz">
+                        </div>
+                        <div class="col brand-ico">
+                          <img class="img-responsive"  src="img/Rolls Royce.png" style="width: 50px;"  alt="toyota">
+                        </div>
+                        <div class="col brand-ico">
+                          <img class="img-responsive"  src="img/ferrari.png" style="width: 40px;"  alt="toyota">
+                        </div>
+                        <div class="col brand-ico">
+                          <img  src="img/jaguar.png"  style="width: 60px;"  alt="toyota">
+                        </div>
+                        <div class="col brand-ico">
+                          <img class="img-responsive"  src="img/Volkswagen.png" style="width: 45px;"  alt="toyota">
+                        </div>
+                        </div>
+                        </div>
+        </section>
+    </section>
+
+
+    <section id="service">
+
+    </section>
