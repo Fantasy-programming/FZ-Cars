@@ -12,4 +12,8 @@ db.once("open", function () {
 
 //require
 
+require("./User");
 require("./Category");
+require("./Location");
+require("./Cars");
+
