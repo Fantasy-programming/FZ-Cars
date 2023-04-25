@@ -1,5 +1,9 @@
 const express = require("express");
+const session = require("express-session");
+const passport = require("passport");
+const localStrategy = require("passport-local").Strategy;
 const expressLayouts = require("express-ejs-layouts");
+const bcrypt = require("bcrypt");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -11,6 +15,20 @@ require('dotenv').config();
 app.use(express.urlencoded({extended: true}));
 app.use(express.static('public'));
 app.use(expressLayouts);
+
+// What is this?
+app.use(session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: true
+}));
+
+// passport.js
+require("./server/config/passport")(passport);
+
+app.use(passport.initialize());
+app.use(passport.session());
+ 
 
 // Where the layout are stored
 app.set('layout', './layouts/main');
